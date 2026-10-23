@@ -28,7 +28,7 @@ The following guides cover individual aspects of LLVM IR. Each topic links to a 
 
 | Topic | Description | Guide |
 |---|---|---|
-| **Get Started** | Compilation, linking and execution | [View Guide](./guides/getting-started.md) |
+| **Getting Started** | Compilation, linking and execution | [View Guide](./guides/getting-started.md) |
 | **Variables & Values** | SSA values, constants, and variable storage. | [View Guide](./guides/variables.md) |
 | **Data Types** | Integers, floating-point types, pointers, arrays, and structures. | [View Guide](./guides/types.md) |
 | **Functions** | Function declarations, definitions, parameters, and return values. | [View Guide](./guides/functions.md) |
