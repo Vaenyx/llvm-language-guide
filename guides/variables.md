@@ -77,7 +77,7 @@ Local SSA values are not necessarily stored in memory. They represent values pro
 Although SSA values cannot be reassigned, LLVM IR supports mutable variables through pointers.
 
 > ![Explanation]
-> Pointers are essentially integers which store a stack memory address
+> Pointers are values that refer to memory locations. They can point to stack memory, heap memory, global variables, or other addressable locations. In modern LLVM IR, pointers use the ptr type.
 
 To implement mutable variables the important instructions are:
 
