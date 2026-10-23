@@ -108,5 +108,5 @@ clang optimized-foo.ll -o optimized-foo
 
 ---
 
-**Next:** [Variables](./variables.md) | [Data Types](./types.md)
+**Next:** [Variables](./variables.md) | [Comments](./comments.md)
 
