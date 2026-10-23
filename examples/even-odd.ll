@@ -1,4 +1,4 @@
-@error_msg = private unnamed_addr constant [24 x i8] c"Error: No args provided\00"
+@error_msg = private unnamed_addr constant [24 x i8] c"Error: No arg provided\00"
 
 @even_msg = private unnamed_addr constant [5 x i8] c"Even\00"
 @odd_msg = private unnamed_addr constant [4 x i8] c"Odd\00"
