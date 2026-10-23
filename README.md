@@ -32,6 +32,7 @@ The following guides cover individual aspects of LLVM IR. Each topic links to a 
 | **Variables & Values** | SSA values, constants, and variable storage. | [View Guide](./guides/variables.md) |
 | **Data Types** | Integers, floating-point types, pointers, arrays, and structures. | [View Guide](./guides/types.md) |
 | **Functions** | Function declarations, definitions, parameters, and return values. | [View Guide](./guides/functions.md) |
+| **Command-Line-Arguments** | Access and process command line arguments. | [View Guide](./guides/command-line-arguments.md) |
 | **Arithmetic Operations** | Integer and floating-point arithmetic instructions. | [View Guide](./guides/arithmetic.md) |
 | **Memory Operations** | Allocating, loading, and storing data in memory. | [View Guide](./guides/memory.md) |
 | **Control Flow** | Branches, basic blocks, conditions, and loops. | [View Guide](./guides/control-flow.md) |
@@ -39,6 +40,28 @@ The following guides cover individual aspects of LLVM IR. Each topic links to a 
 | **PHI Nodes** | Combining SSA values from different control-flow paths. | [View Guide](./guides/phi-nodes.md) |
 | **Structures & Arrays** | Working with aggregate data types. | [View Guide](./guides/aggregates.md) |
 | **External Functions** | Declaring and calling functions from external libraries. | [View Guide](./guides/external-functions.md) |
+
+## Example Projects
+
+The following projects demonstrate LLVM IR through practical examples, starting with simple programs and gradually introducing more advanced concepts.
+
+| Project | Description | Guide |
+|---|---|---|
+| **Hello World** | Print a simple message to the console using `printf` or `puts`. | [View Project](./examples/hello-world.md) |
+| **Hello User** | Read a name from standard input and print a personalized greeting. | [View Project](./examples/hello-user.md) |
+| **Simple Calculator** | Perform basic arithmetic operations such as addition, subtraction, multiplication, and division. | [View Project](./examples/calculator.md) |
+| **Even or Odd** | Determine whether an integer is even or odd using arithmetic and conditional branches. | [View Project](./examples/even-odd.md) |
+| **Number Guessing Game** | Build a simple game that asks the user to guess a number. | [View Project](./examples/number-guessing.md) |
+| **Factorial Calculator** | Calculate the factorial of a number using loops or recursion. | [View Project](./examples/factorial.md) |
+| **Fibonacci Sequence** | Generate Fibonacci numbers using loops and PHI nodes. | [View Project](./examples/fibonacci.md) |
+| **Prime Number Checker** | Determine whether a given integer is prime. | [View Project](./examples/prime-checker.md) |
+| **Array Sum** | Iterate through an array and calculate the sum of its elements. | [View Project](./examples/array-sum.md) |
+| **Find Min & Max** | Find the smallest and largest values in an array. | [View Project](./examples/min-max.md) |
+| **String Length** | Implement a basic string length function without using `strlen`. | [View Project](./examples/string-length.md) |
+| **String Comparison** | Compare two strings character by character. | [View Project](./examples/string-comparison.md) |
+| **Bubble Sort** | Implement a simple sorting algorithm using arrays and nested loops. | [View Project](./examples/bubble-sort.md) |
+| **Dynamic Memory** | Allocate and free memory using external functions such as `malloc` and `free`. | [View Project](./examples/dynamic-memory.md) |
+| **File Reader** | Open and read a text file using standard C library functions. | [View Project](./examples/file-reader.md) |
 
 ## Additional Resources
 
