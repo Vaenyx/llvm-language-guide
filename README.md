@@ -47,21 +47,21 @@ The following projects demonstrate LLVM IR through practical examples, starting 
 
 | Project | Description | Guide |
 |---|---|---|
-| **Hello World** | Print a simple message to the console using `printf` or `puts`. | [View Project](./examples/hello-world.md) |
-| **Hello User** | Read a name from standard input and print a personalized greeting. | [View Project](./examples/hello-user.md) |
-| **Simple Calculator** | Perform basic arithmetic operations such as addition, subtraction, multiplication, and division. | [View Project](./examples/calculator.md) |
-| **Even or Odd** | Determine whether an integer is even or odd using arithmetic and conditional branches. | [View Project](./examples/even-odd.md) |
-| **Number Guessing Game** | Build a simple game that asks the user to guess a number. | [View Project](./examples/number-guessing.md) |
-| **Factorial Calculator** | Calculate the factorial of a number using loops or recursion. | [View Project](./examples/factorial.md) |
-| **Fibonacci Sequence** | Generate Fibonacci numbers using loops and PHI nodes. | [View Project](./examples/fibonacci.md) |
-| **Prime Number Checker** | Determine whether a given integer is prime. | [View Project](./examples/prime-checker.md) |
-| **Array Sum** | Iterate through an array and calculate the sum of its elements. | [View Project](./examples/array-sum.md) |
-| **Find Min & Max** | Find the smallest and largest values in an array. | [View Project](./examples/min-max.md) |
-| **String Length** | Implement a basic string length function without using `strlen`. | [View Project](./examples/string-length.md) |
-| **String Comparison** | Compare two strings character by character. | [View Project](./examples/string-comparison.md) |
-| **Bubble Sort** | Implement a simple sorting algorithm using arrays and nested loops. | [View Project](./examples/bubble-sort.md) |
-| **Dynamic Memory** | Allocate and free memory using external functions such as `malloc` and `free`. | [View Project](./examples/dynamic-memory.md) |
-| **File Reader** | Open and read a text file using standard C library functions. | [View Project](./examples/file-reader.md) |
+| **Hello World** | Print a simple message to the console using `printf` or `puts`. | [View Project](./examples/hello-world.ll) |
+| **Hello User** | Read a name from standard input and print a personalized greeting. | [View Project](./examples/hello-user.ll) |
+| **Simple Calculator** | Perform basic arithmetic operations such as addition, subtraction, multiplication, and division. | [View Project](./examples/calculator.ll) |
+| **Even or Odd** | Determine whether an integer is even or odd using arithmetic and conditional branches. | [View Project](./examples/even-odd.ll) |
+| **Number Guessing Game** | Build a simple game that asks the user to guess a number. | [View Project](./examples/number-guessing.ll) |
+| **Factorial Calculator** | Calculate the factorial of a number using loops or recursion. | [View Project](./examples/factorial.ll) |
+| **Fibonacci Sequence** | Generate Fibonacci numbers using loops and PHI nodes. | [View Project](./examples/fibonacci.ll) |
+| **Prime Number Checker** | Determine whether a given integer is prime. | [View Project](./examples/prime-checker.ll) |
+| **Array Sum** | Iterate through an array and calculate the sum of its elements. | [View Project](./examples/array-sum.ll) |
+| **Find Min & Max** | Find the smallest and largest values in an array. | [View Project](./examples/min-max.ll) |
+| **String Length** | Implement a basic string length function without using `strlen`. | [View Project](./examples/string-length.ll) |
+| **String Comparison** | Compare two strings character by character. | [View Project](./examples/string-comparison.ll) |
+| **Bubble Sort** | Implement a simple sorting algorithm using arrays and nested loops. | [View Project](./examples/bubble-sort.ll) |
+| **Dynamic Memory** | Allocate and free memory using external functions such as `malloc` and `free`. | [View Project](./examples/dynamic-memory.ll) |
+| **File Reader** | Open and read a text file using standard C library functions. | [View Project](./examples/file-reader.ll) |
 
 ## Additional Resources
 
