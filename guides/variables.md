@@ -219,9 +219,85 @@ Because it is declared as a constant, its contents must not be modified.
 Attempting to write to it results in undefined behavior.
 
 > ![Explanation]
-> Undefined behaviour means that the program does not guarantee a certain behaviour for something, therefore the behaviour is subject to change between compiler versions, implementations or even in a single program execution
+> Undefined behaviour means that the program does not guarantee a certain behaviour for something.
+> Therefore the behaviour is subject to change between compiler versions, implementations or even in a single program execution
 
-## 6. Naming Rules
+## 6. Module Control (Linkage & Visibility)
+
+LLVM IR provides options for how to control the module capabilities of symbols.
+
+**Visibility** determines how symbols are exposed (eg. in shared libraries)
+
+### Linking
+
+Linkage specifies how a function or global variable participates in symbol resolution between modules.
+
+Imagine you have two files, `math-globals.ll` is supposed to expose a variable called pi to be used in `math.ll`.
+
+By default, LLVM uses `external` linking, allowing a symbol to be used in another file or module.
+
+```llvm
+@pi = global float 3.1415927
+```
+
+You can then use it in another file by declaring it.
+
+```llvm
+@pi = external global float
+```
+
+If you want to prevent other modules from referencing your variable by name, you can use the `internal` keyword.
+
+```llvm
+@pi = internal global float 3.1415927
+```
+
+You can even go one step further and also remove the symbol from the object file's symbol table by using the `private` keyword.
+
+```llvm
+@pi = private global float 3.1415927
+```
+
+Summarized you can view it like this:
+| Linkage | Accessible externally | Object file symbol |
+|---|---|---|
+| `external` (default) | Yes | Global |
+| `internal` | No | Local |
+| `private` | No | None |
+
+### Visibility
+
+Visibility specifies how symbols are exposed to other executables and shared libraries.
+
+By default, LLVM uses `default` visibility, allowing a symbol to be exported and potentially overridden by another shared library.
+
+```llvm
+@pi = global float 3.1415927
+```
+
+If you want to prevent other shared libraries from accessing your symbol directly, you can use the `hidden` keyword.
+
+```llvm
+@pi = hidden global float 3.1415927
+```
+
+You can also use `protected` to keep the symbol accessible externally while preventing other modules from overriding references to it within the defining shared library.
+
+```llvm
+@pi = protected global float 3.1415927
+```
+
+Summarized you can view it like this (on ELF-based systems):
+
+| Visibility | Externally accessible | Overridable |
+|---|---|---|
+| `default` (default) | Yes | Yes |
+| `hidden` | No (dynamic linking) | No |
+| `protected` | Yes | No |
+
+**Important:** Unlike linkage, visibility primarily controls dynamic linking. Symbols with `internal` or `private` linkage must use `default` visibility.
+
+## 7. Naming Rules
 
 LLVM IR uses different prefixes to distinguish local and global identifiers.
 
@@ -236,7 +312,7 @@ Local names only need to be unique within their function.
 
 Global symbol names must be unique within their LLVM module.
 
-## 7. Important Differences
+## 8. Important Differences
 
 | Feature | SSA Value | Memory Variable | Constant |
 |---|---|---|---|
