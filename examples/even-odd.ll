@@ -10,6 +10,7 @@ declare i32 @puts(ptr)
 declare i32 @atoi(ptr)
 
 define private i1 @is_odd(i32 %number) {
+entry:
   %is_odd = trunc i32 %number to i1
   ret i1 %is_odd
 }
