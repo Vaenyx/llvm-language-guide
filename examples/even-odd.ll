@@ -1,11 +1,10 @@
-@error_msg = private unnamed_addr constant [24 x i8] c"Error: No arg provided\00"
+@error_msg = private unnamed_addr constant [23 x i8] c"Error: No arg provided\00"
 
 @even_msg = private unnamed_addr constant [5 x i8] c"Even\00"
 @odd_msg = private unnamed_addr constant [4 x i8] c"Odd\00"
 
 declare i32 @puts(ptr)
 declare i32 @atoi(ptr)
-
 
 define i32 @main(i32 %argc, ptr %argv) {
 entry:
