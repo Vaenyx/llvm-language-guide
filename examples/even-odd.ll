@@ -6,6 +6,11 @@
 declare i32 @puts(ptr)
 declare i32 @atoi(ptr)
 
+define private i1 @is_odd(i32 %number) {
+  %is_odd = trunc i32 %number to i1
+  ret i1 %is_odd
+}
+
 define i32 @main(i32 %argc, ptr %argv) {
 entry:
     %has_arg = icmp sgt i32 %argc, 1
@@ -16,7 +21,7 @@ check:
   %arg_str = load ptr, ptr %arg_ptr
   %number = call i32 @atoi(ptr %arg_str)
 
-  %is_odd = trunc i32 %number to i1
+  %is_odd = call i1 @is_odd(i32 %number)
 
   br i1 %is_odd, label %odd, label %even
 
