@@ -1,5 +1,5 @@
 @greeting_fmt = private unnamed_addr constant [10 x i8] c"Hello %s\0A\00"
-@error_msg = private unnamed_addr constant [24 x i8] c"Error: No arg provided\00"
+@error_msg = private unnamed_addr constant [23 x i8] c"Error: No arg provided\00"
 
 declare i32 @printf(ptr, ...)
 declare i32 @puts(ptr)
