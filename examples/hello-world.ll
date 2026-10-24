@@ -4,6 +4,6 @@ declare i32 @puts(ptr)
 
 define i32 @main() {
 entry:
-  call i32 @puts(ptr @str)
+  call i32 @puts(ptr @greeting_msg)
   ret i32 0
 }
