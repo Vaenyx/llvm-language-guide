@@ -47,7 +47,7 @@ Each SSA value must have a unique definition.
 
 ## 2. Local Values
 
-Local values (local variables) are commonly referred to as variables and are identified by an `%` prefix.
+Local values are commonly referred to as variables and are identified by an `%` prefix.
 
 For example:
 
