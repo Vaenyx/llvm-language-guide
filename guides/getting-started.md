@@ -10,8 +10,6 @@ You have the following options
 
 The easiest way of compiling LLVM IR is using the C-Language-Family compiler `clang`.
 
-Suppose your source code file is called `foo.ll`
-
 #### Compile it
 
 ```bash
