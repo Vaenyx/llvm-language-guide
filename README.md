@@ -1,6 +1,6 @@
 # LLVM IR Language Guide
 
-A collection of guides and examples for learning **LLVM Intermediate Representation (LLVM IR)**, focusing mainly on the basics.
+A collection of guides and examples for learning **LLVM Intermediate Representation (LLVM IR)**.
 
 ## What is LLVM?
 
