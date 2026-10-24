@@ -48,7 +48,7 @@ The following projects demonstrate LLVM IR through practical examples, starting 
 
 | Project | Description | Guide |
 |---|---|---|
-| **Hello World** | Print a simple message to the console using `printf` or `puts`. | [View Project](./examples/hello-world.ll) |
+| **Hello World** | Print a simple message to the console using `puts`. | [View Project](./examples/hello-world.ll) |
 | **Hello User** | Read a name from standard input and print a personalized greeting. | [View Project](./examples/hello-user.ll) |
 | **Simple Calculator** | Perform basic arithmetic operations such as addition, subtraction, multiplication, and division. | [View Project](./examples/calculator.ll) |
 | **Even or Odd** | Determine whether an integer is even or odd using arithmetic and conditional branches. | [View Project](./examples/even-odd.ll) |
