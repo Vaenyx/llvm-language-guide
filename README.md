@@ -28,41 +28,41 @@ The following guides cover individual aspects of LLVM IR. Each topic links to a 
 
 | Topic | Description | Guide |
 |---|---|---|
-| **Getting Started** | Compilation, linking and execution | [View Guide](./guides/getting-started.md) |
-| **Variables & Values** | SSA values, constants, and variable storage. | [View Guide](./guides/variables.md) |
-| **Comments** | Single line comments. | [View Guide](./guides/comments.md) |
-| **Data Types** | Integers, floating-point types, pointers, arrays, and structures. | [View Guide](./guides/types.md) |
-| **Functions** | Function declarations, definitions, parameters, and return values. | [View Guide](./guides/functions.md) |
-| **Command-Line-Arguments** | Access and process command line arguments. | [View Guide](./guides/command-line-arguments.md) |
-| **Arithmetic Operations** | Integer and floating-point arithmetic instructions. | [View Guide](./guides/arithmetic.md) |
-| **Memory Operations** | Allocating, loading, and storing data in memory. | [View Guide](./guides/memory.md) |
-| **Control Flow** | Branches, basic blocks, conditions, and loops. | [View Guide](./guides/control-flow.md) |
-| **Comparisons** | Integer and floating-point comparisons. | [View Guide](./guides/comparisons.md) |
-| **PHI Nodes** | Combining SSA values from different control-flow paths. | [View Guide](./guides/phi-nodes.md) |
-| **Structures & Arrays** | Working with aggregate data types. | [View Guide](./guides/aggregates.md) |
-| **External Functions** | Declaring and calling functions from external libraries. | [View Guide](./guides/external-functions.md) |
+| **Getting Started** | Compilation, linking and execution | [View](./guides/getting-started.md) |
+| **Variables & Values** | SSA values, constants, and variable storage. | [View](./guides/variables.md) |
+| **Comments** | Single line comments. | [View](./guides/comments.md) |
+| **Data Types** | Integers, floating-point types, pointers, arrays, and structures. | [View](./guides/types.md) |
+| **Functions** | Function declarations, definitions, parameters, and return values. | [View](./guides/functions.md) |
+| **Command-Line-Arguments** | Access and process command line arguments. | [View](./guides/command-line-arguments.md) |
+| **Arithmetic Operations** | Integer and floating-point arithmetic instructions. | [View](./guides/arithmetic.md) |
+| **Memory Operations** | Allocating, loading, and storing data in memory. | [View](./guides/memory.md) |
+| **Control Flow** | Branches, basic blocks, conditions, and loops. | [View](./guides/control-flow.md) |
+| **Comparisons** | Integer and floating-point comparisons. | [View](./guides/comparisons.md) |
+| **PHI Nodes** | Combining SSA values from different control-flow paths. | [View](./guides/phi-nodes.md) |
+| **Structures & Arrays** | Working with aggregate data types. | [View](./guides/aggregates.md) |
+| **External Functions** | Declaring and calling functions from external libraries. | [View](./guides/external-functions.md) |
 
 ## Example Projects
 
 The following projects demonstrate LLVM IR through practical examples, starting with simple programs and gradually introducing more advanced concepts.
 
-| Project | Description | Guide |
+| Project | Description | Project |
 |---|---|---|
-| **Hello World** | Print a simple message to the console using `puts`. | [View Project](./examples/hello-world.ll) |
-| **Hello User** | Read a name from standard input and print a personalized greeting. | [View Project](./examples/hello-user.ll) |
-| **Simple Calculator** | Perform basic arithmetic operations such as addition, subtraction, multiplication, and division. | [View Project](./examples/calculator.ll) |
-| **Even or Odd** | Determine whether an integer is even or odd using arithmetic and conditional branches. | [View Project](./examples/even-odd.ll) |
-| **Number Guessing Game** | Build a simple game that asks the user to guess a number. | [View Project](./examples/number-guessing.ll) |
-| **Factorial Calculator** | Calculate the factorial of a number using loops or recursion. | [View Project](./examples/factorial.ll) |
-| **Fibonacci Sequence** | Generate Fibonacci numbers using loops and PHI nodes. | [View Project](./examples/fibonacci.ll) |
-| **Prime Number Checker** | Determine whether a given integer is prime. | [View Project](./examples/prime-checker.ll) |
-| **Array Sum** | Iterate through an array and calculate the sum of its elements. | [View Project](./examples/array-sum.ll) |
-| **Find Min & Max** | Find the smallest and largest values in an array. | [View Project](./examples/min-max.ll) |
-| **String Length** | Implement a basic string length function without using `strlen`. | [View Project](./examples/string-length.ll) |
-| **String Comparison** | Compare two strings character by character. | [View Project](./examples/string-comparison.ll) |
-| **Bubble Sort** | Implement a simple sorting algorithm using arrays and nested loops. | [View Project](./examples/bubble-sort.ll) |
-| **Dynamic Memory** | Allocate and free memory using external functions such as `malloc` and `free`. | [View Project](./examples/dynamic-memory.ll) |
-| **File Reader** | Open and read a text file using standard C library functions. | [View Project](./examples/file-reader.ll) |
+| **Hello World** | Print a simple message to the console using `puts`. | [Project](./examples/hello-world.ll) |
+| **Hello User** | Read a name from standard input and print a personalized greeting. | [Project](./examples/hello-user.ll) |
+| **Simple Calculator** | Perform basic arithmetic operations such as addition, subtraction, multiplication, and division. | [Project](./examples/calculator.ll) |
+| **Even or Odd** | Determine whether an integer is even or odd using arithmetic and conditional branches. | [Project](./examples/even-odd.ll) |
+| **Number Guessing Game** | Build a simple game that asks the user to guess a number. | [Project](./examples/number-guessing.ll) |
+| **Factorial Calculator** | Calculate the factorial of a number using loops or recursion. | [Project](./examples/factorial.ll) |
+| **Fibonacci Sequence** | Generate Fibonacci numbers using loops and PHI nodes. | [Project](./examples/fibonacci.ll) |
+| **Prime Number Checker** | Determine whether a given integer is prime. | [Project](./examples/prime-checker.ll) |
+| **Array Sum** | Iterate through an array and calculate the sum of its elements. | [Project](./examples/array-sum.ll) |
+| **Find Min & Max** | Find the smallest and largest values in an array. | [Project](./examples/min-max.ll) |
+| **String Length** | Implement a basic string length function without using `strlen`. | [Project](./examples/string-length.ll) |
+| **String Comparison** | Compare two strings character by character. | [Project](./examples/string-comparison.ll) |
+| **Bubble Sort** | Implement a simple sorting algorithm using arrays and nested loops. | [Project](./examples/bubble-sort.ll) |
+| **Dynamic Memory** | Allocate and free memory using external functions such as `malloc` and `free`. | [Project](./examples/dynamic-memory.ll) |
+| **File Reader** | Open and read a text file using standard C library functions. | [Project](./examples/file-reader.ll) |
 
 ## Additional Resources
 
